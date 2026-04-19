@@ -1,4 +1,6 @@
 export const dynamic = "force-dynamic";
+
+
 import "~/styles/globals.css";
 import { Providers } from "~/components/providers";
 import { Toaster } from "~/components/ui/sonner";

@@ -1,5 +1,9 @@
 "use client";
+
+
 export const dynamic = "force-dynamic";
+
+
 import { RedirectToSignIn, SignedIn } from "@daveyplate/better-auth-ui";
 import {
   Loader2,
