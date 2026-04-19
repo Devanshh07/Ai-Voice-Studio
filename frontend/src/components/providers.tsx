@@ -7,13 +7,13 @@ import { authClient } from "~/lib/auth-client";
 
 export function Providers({ children }: { children: ReactNode }) {
   const router = useRouter();
+
   return (
     <AuthUIProvider
       authClient={authClient}
-      navigate={router.push}
-      replace={router.replace}
+      navigate={(path) => router.push(path)}
+      replace={(path) => router.replace(path)}
       onSessionChange={() => {
-        // Clear router cache (protected routes)
         router.refresh();
       }}
       Link={Link}
