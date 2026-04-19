@@ -2,7 +2,7 @@ import { headers } from 'next/headers';
 import { redirect } from 'next/navigation';
 import CustomerPortalRedirect from '~/components/sidebar/CustomerPortalRedirect';
 import { auth } from '~/lib/auth';
-
+export const dynamic = "force-dynamic";
 export default async function Page() {
   const session = await auth.api.getSession({
     headers: await headers(),

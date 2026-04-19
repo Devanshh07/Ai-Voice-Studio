@@ -1,5 +1,5 @@
 "use client";
-
+export const dynamic = "force-dynamic";
 import { RedirectToSignIn, SignedIn } from "@daveyplate/better-auth-ui";
 import { Loader2 } from "lucide-react";
 import { authClient } from "~/lib/auth-client";
