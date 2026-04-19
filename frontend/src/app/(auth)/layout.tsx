@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import type { ReactNode } from "react";
 import { Providers } from "~/components/providers";
 import { Sparkles, Mic, Zap, Target } from "lucide-react";
